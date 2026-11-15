@@ -28,15 +28,50 @@
       color: var(--fg);
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
+    body > * {
+      grid-area: 1 / 1;
+    }
+    .wasp {
+      margin: 0;
+      font-size: min(3.2vw, 18px);
+      line-height: 1.15;
+      opacity: 0.14;
+      user-select: none;
+      pointer-events: none;
+    }
     h1 {
+      position: relative;
       font-weight: 400;
       font-size: clamp(1.5rem, 5vw, 2.5rem);
       letter-spacing: 0.02em;
       margin: 0 16px;
+      padding: 0.2em 0.5em;
+      background: var(--bg);
     }
   </style>
 </head>
 <body>
+  <pre class="wasp" aria-hidden="true">
+                    \           /
+                     \         /
+                      \  ___  /
+                       \(o o)/
+                       ( \_/ )
+          __...---~~~~~\_____/~~~~~---...__
+     .-~~        __.--'/=====\'--.__        ~~-.
+    (______..--''     /|=====|\     ''--..______)
+                     / |=====| \
+                    /  \=====/  \
+                   /    \___/    \
+                  /     /###\     \
+                 /     |#####|     \
+                       |=====|
+                       |#####|
+                       |=====|
+                        \###/
+                         \=/
+                          V
+</pre>
   <h1>polistes.net</h1>
 </body>
 </html>
